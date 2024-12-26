@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Finder - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+        .search-bar {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-bar input, .search-bar select, .search-bar button {
+            margin: 5px;
+        }
+        .search-bar input, .search-bar select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .novel-card {
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .novel-card img {
+            width: 20%;
+            margin: auto;
+            display: block;
+        }
+        .read-button a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .pagination button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .upload-link {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Novel Finder</h1>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search-title" placeholder="Cari berdasarkan judul...">
+        <select id="search-genre">
+            <option value="">Pilih genre...</option>
+            <!-- Tambahkan 40 genre di sini -->
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <!-- ...genre lainnya... -->
+        </select>
+        <button onclick="searchNovels()">Cari</button>
+    </div>
+
+    <!-- Novel Card -->
+    <div class="novel-card" id="novel-card-template" style="display:none;">
+        <img src="novel-image-url.jpg" alt="Novel Image">
+        <h3>Judul Novel</h3>
+        <p class="genre">Genre: Fiksi, Petualangan</p>
+        <p class="synopsis">Ini adalah sinopsis singkat dari novel tersebut...</p>
+        <div class="read-button">
+            <a href="novel-link.com">Baca Novel</a>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <!-- Tambahkan lebih banyak tombol sesuai jumlah halaman -->
+    </div>
+
+    <!-- Link ke Halaman Upload -->
+    <a href="upload.html" class="upload-link">Upload Novel Baru</a>
+
+    <script>
+        function searchNovels() {
+            // Implementasi pencarian berdasarkan judul atau genre
+        }
+    </script>
+</body>
+</html>
